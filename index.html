@@ -4,336 +4,300 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BARÇA EMPIRE</title>
+<title>BARÇA EMPIRE | הבית של בארסה</title>
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-<!-- BARCA EMPIRE - PLAYER STATS -->
-<section id="player-stats" style="padding:50px 20px;background:linear-gradient(135deg,#080018,#16002d,#001b45);color:white;text-align:center;">
-  <h2 style="font-size:36px;color:#c084fc;">🔵🔴 BARÇA PLAYER STATS</h2>
-  <p>נתוני שחקני ברצלונה | עונת 2026/27 | לה ליגה</p>
-
-  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-top:30px;">
-
-    <div style="background:#211039;padding:20px;border-radius:18px;width:220px;">
-      <h3>⭐ Lamine Yamal</h3>
-      <p>הופעות: 12</p><p>שערים: 10</p><p>בישולים: 8</p>
-      <a style="color:#d8b4fe;" target="_blank" href="https://www.youtube.com/results?search_query=Lamine+Yamal+Barcelona+goals+short+clips">רגעי השערים ⚽</a>
-    </div>
-
-    <div style="background:#211039;padding:20px;border-radius:18px;width:220px;">
-      <h3>🐐 Raphinha</h3>
-      <p>הופעות: 11</p><p>שערים: 15</p><p>בישולים: 3</p>
-      <a style="color:#d8b4fe;" target="_blank" href="https://www.youtube.com/results?search_query=Raphinha+Barcelona+goals+short+clips">רגעי השערים ⚽</a>
-    </div>
-
-    <div style="background:#211039;padding:20px;border-radius:18px;width:220px;">
-      <h3>🔥 Fermín López</h3>
-      <p>הופעות: 11</p><p>שערים: 7</p><p>בישולים: 5</p>
-      <a style="color:#d8b4fe;" target="_blank" href="https://www.youtube.com/results?search_query=Fermin+Lopez+Barcelona+goals+short+clips">רגעי השערים ⚽</a>
-    </div>
-
-    <div style="background:#211039;padding:20px;border-radius:18px;width:220px;">
-      <h3>🎯 Pedri</h3>
-      <p>הופעות: 12</p><p>שערים: 1</p><p>בישולים: 2</p>
-      <a style="color:#d8b4fe;" target="_blank" href="https://www.youtube.com/results?search_query=Pedri+Barcelona+goals+short+clips">רגעי השערים ⚽</a>
-    </div>
-
-    <div style="background:#211039;padding:20px;border-radius:18px;width:220px;">
-      <h3>🛡️ Pau Cubarsí</h3>
-      <p>הופעות: 9</p><p>שערים: 0</p><p>בישולים: 2</p>
-      <a style="color:#d8b4fe;" target="_blank" href="https://www.youtube.com/results?search_query=Pau+Cubarsi+Barcelona+goals+short+clips">רגעי השערים ⚽</a>
-    </div>
-
-    <div style="background:#211039;padding:20px;border-radius:18px;width:220px;">
-      <h3>🧤 Joan García</h3>
-      <p>הופעות: 11</p><p>שערים: 0</p><p>בישולים: 0</p>
-      <a style="color:#d8b4fe;" target="_blank" href="https://www.youtube.com/results?search_query=Joan+Garcia+Barcelona+saves">רגעים גדולים 🧤</a>
-    </div>
-
-  </div>
-
-  <p style="margin-top:25px;font-size:13px;color:#c4b5fd;">הנתונים מתייחסים לליגה הספרדית בלבד ועשויים להשתנות.</p>
-  <a href="https://fbref.com/en/squads/206d90db/2026-2027/c12/Barcelona-Stats-La-Liga"
-     target="_blank" style="color:#fff;background:#6d28d9;padding:12px 22px;border-radius:12px;text-decoration:none;">
-     כל נתוני ברצלונה
-  </a>
-</section>
-
-<!-- BARCA MATCH HIGHLIGHTS -->
-<section style="padding:45px 20px;background:#0b0715;color:white;text-align:center;">
-  <h2 style="color:#c084fc;font-size:32px;">🎬 BARÇA MATCH HIGHLIGHTS</h2>
-  <p>תקצירים ורגעי המשחקים של בארסה</p>
-  <a href="https://www.youtube.com/results?search_query=FC+Barcelona+official+match+highlights+2026"
-     target="_blank" style="display:inline-block;background:#6d28d9;color:white;padding:14px 24px;border-radius:12px;text-decoration:none;">
-     צפה בתקצירי המשחקים 🔥
-  </a>
-</section>
-
+:root {
+  --red:#e52345;
+  --blue:#1746a2;
+  --dark:#080b19;
+  --panel:#131a32;
+  --light:#f4f5ff;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
 body{
- margin:0;font-family:Arial,sans-serif;color:white;
- background:
- radial-gradient(ellipse at 10% 15%,#7900c9,transparent 35%),
- radial-gradient(ellipse at 90% 30%,#004bba,transparent 35%),
- radial-gradient(ellipse at 50% 85%,#b00040,transparent 40%),
- #05050b;
- background-attachment:fixed;
+  margin:0;background:var(--dark);color:var(--light);
+  font-family:Arial,sans-serif;
 }
 header{
- text-align:center;padding:65px 15px;
- background:linear-gradient(120deg,#080014,#21003b,#001b42,#390018);
- border-bottom:2px solid #a855f7;
- box-shadow:0 0 35px #8b00ff66;
+  position:sticky;top:0;z-index:10;
+  background:rgba(7,10,25,.96);
+  border-bottom:1px solid #29365c;
+  padding:17px 5%;
+  display:flex;justify-content:space-between;
+  align-items:center;flex-wrap:wrap;gap:15px;
 }
-header h1{
- font-size:clamp(38px,7vw,75px);margin:0;letter-spacing:4px;
- background:linear-gradient(90deg,#fff,#b76aff,#ff315b,#428cff);
- background-clip:text;color:transparent;
-}
-nav{
- position:sticky;top:0;z-index:10;
- display:flex;justify-content:center;flex-wrap:wrap;gap:12px;
- padding:17px;background:#080711ed;
- border-bottom:1px solid #7738b9;
-}
-nav a{color:white;text-decoration:none;font-weight:bold;padding:10px 15px;border-radius:20px}
-nav a:hover{background:#8b28d9;box-shadow:0 0 18px #a855f7}
+.logo{font-size:25px;font-weight:900;color:white}
+.logo span{color:#ff405e}
+nav{display:flex;flex-wrap:wrap;gap:17px}
+nav a{color:white;text-decoration:none;font-weight:bold;font-size:14px}
+nav a:hover{color:#ff405e}
 .hero{
- min-height:430px;display:flex;align-items:center;justify-content:center;
- text-align:center;padding:25px;
- background:linear-gradient(90deg,#090015bb,#001c40bb,#350018bb),
- url("https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1500");
- background-size:cover;background-position:center;
+  min-height:510px;padding:85px 8%;
+  display:flex;align-items:center;
+  background:
+  linear-gradient(90deg,rgba(5,8,24,.96),rgba(8,15,50,.55)),
+  url("https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1800&q=85")
+  center/cover;
 }
-.hero h2{font-size:clamp(38px,7vw,65px);text-shadow:0 0 25px #a855f7}
-.hero p{font-size:21px}
-.glow,button{
- display:inline-block;padding:13px 23px;border:0;border-radius:30px;
- background:linear-gradient(90deg,#8b20d7,#0754ba,#c40048);
- color:white;text-decoration:none;font-weight:bold;cursor:pointer;
- box-shadow:0 0 18px #7130c777;
+.hero-content{max-width:750px}
+.tag{color:#ff637a;font-weight:bold;letter-spacing:3px}
+.hero h1{font-size:clamp(48px,9vw,100px);margin:15px 0;text-shadow:0 0 25px #e52345}
+.hero p{font-size:19px;line-height:1.8;color:#ddd}
+.btn{
+  display:inline-block;padding:13px 20px;margin:7px 5px 0 0;
+  border-radius:9px;background:linear-gradient(100deg,var(--red),var(--blue));
+  color:white;text-decoration:none;font-weight:bold;
 }
-button:hover,.glow:hover{transform:scale(1.04)}
-section{max-width:1150px;margin:auto;padding:60px 20px}
+section{padding:55px 6%}
 .section-title{
- text-align:center;font-size:35px;margin-bottom:35px;
- color:#e6b5ff;text-shadow:0 0 18px #9b36ff;
+  font-size:34px;margin:0 0 12px;
+  border-right:6px solid var(--red);padding-right:15px;
 }
-.players,.products,.news{
- display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px;
+.sub{color:#aeb8d5;margin-bottom:28px;line-height:1.7}
+.stats-grid,.players-grid,.matches-grid,.goals-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
 }
-.card{
- background:linear-gradient(145deg,#171023,#10182d,#210b20);
- border:1px solid #7436a5;border-radius:20px;overflow:hidden;
- text-align:center;padding-bottom:22px;box-shadow:0 8px 28px #0009;
- transition:.3s;
+.stat,.player,.match,.goal,.info{
+  background:linear-gradient(145deg,#172448,#17152e);
+  border:1px solid #303e69;border-radius:15px;
+  padding:22px;transition:.25s;
 }
-.card:hover{transform:translateY(-7px);box-shadow:0 0 30px #8b35ed88}
-.card img{width:100%;height:230px;object-fit:cover}
-.card h3{color:#e8b6ff;font-size:23px}
-.card p{color:#ddd}
-.price{font-size:21px;color:#ffcf63!important;font-weight:bold}
-input,select{
- display:block;width:85%;margin:9px auto;padding:11px;border-radius:9px;
- border:1px solid #8c42c9;background:#0b0b18;color:white;
+.stat:hover,.player:hover,.match:hover,.goal:hover{
+  transform:translateY(-5px);border-color:#fa4260;
+  box-shadow:0 10px 25px #e5234522;
 }
-.panel{
- background:linear-gradient(130deg,#160c29,#081a35,#270a21);
- border:1px solid #7c3bb5;border-radius:20px;padding:25px;
- box-shadow:0 0 25px #621ca944;
+.stat strong{display:block;font-size:30px;color:#ff6077;margin-bottom:7px}
+.stat span{color:#c7cce0}
+.player{position:relative;overflow:hidden}
+.player:before{
+  content:"";position:absolute;top:-40px;left:-35px;
+  width:110px;height:110px;background:#e52345;
+  filter:blur(60px);opacity:.4;
 }
-.news div{background:#151326;border-right:4px solid #a855f7;padding:22px;border-radius:12px}
-.cart-item{padding:15px 0;border-bottom:1px solid #ffffff33}
-footer{
- text-align:center;padding:35px;
- background:linear-gradient(90deg,#090015,#001c3c,#350015);
- border-top:2px solid #8529bd;color:#ddd;
+.player-top{display:flex;justify-content:space-between;align-items:center}
+.shirt{
+  font-size:34px;font-weight:900;color:#ff5873;
+  text-shadow:0 0 15px #e52345;
 }
-.small{color:#aaa;font-size:13px}
+.position{font-size:12px;color:#aebce4;background:#26345d;padding:7px 10px;border-radius:20px}
+.player h3{font-size:21px;margin:18px 0 8px}
+.player p{color:#c3cbe0;line-height:1.6;font-size:14px}
+.player a,.match a,.goal a{
+  display:inline-block;margin-top:10px;margin-left:5px;
+  padding:9px 12px;background:#263d83;
+  color:white;text-decoration:none;border-radius:7px;font-size:13px;font-weight:bold;
+}
+.player a:hover,.match a:hover,.goal a:hover{background:#bd2446}
+.match .score{
+  font-size:28px;font-weight:900;color:white;
+  margin:14px 0;
+}
+.win{color:#69e7a0;font-weight:bold}
+.loss{color:#ff7588;font-weight:bold}
+.match p,.goal p{color:#c5cce0;line-height:1.6}
+.goal{padding:0;overflow:hidden}
+.goal img{width:100%;height:145px;object-fit:cover}
+.goal-content{padding:18px}
+.searchbar{
+  width:100%;padding:15px;border-radius:10px;
+  background:#101a34;border:1px solid #40517d;
+  color:white;font-size:16px;margin:15px 0 25px;
+}
+.searchbar::placeholder{color:#aab4d0}
+.banner{
+  background:linear-gradient(100deg,#173c91,#a21c43);
+  padding:35px;border-radius:18px;text-align:center;
+}
+.banner h2{font-size:30px}
+footer{background:#050713;text-align:center;padding:30px;color:#aab2cc}
+.small{font-size:12px;color:#9da9c9}
 </style>
 </head>
 <body>
 
 <header>
-<h1>BARÇA EMPIRE</h1>
-<p>THE HOME OF TRUE CULERS 🔵🔴</p>
-<a class="glow" href="#store">כניסה לחנות 💜</a>
+  <div class="logo">🔵🔴 BARÇA <span>EMPIRE</span></div>
+  <nav>
+    <a href="#home">בית</a>
+    <a href="#players">השחקנים</a>
+    <a href="#matches">משחקים</a>
+    <a href="#goals">רגעי גולים</a>
+    <a href="#stats">נתונים</a>
+  </nav>
 </header>
 
-<nav>
-<a href="#home">בית</a>
-<a href="#players">שחקנים</a>
-<a href="#history">היסטוריה</a>
-<a href="#news">חדשות</a>
-<a href="#store">חנות</a>
-<a href="#cart">העגלה שלי 🛒</a>
-</nav>
-
 <div class="hero" id="home">
-<div>
-<h2>MES QUE UN CLUB</h2>
-<p>יותר ממועדון. יותר ממשחק. זאת בארסה.</p>
-<a class="glow" href="#players">גלה את בארסה</a>
+  <div class="hero-content">
+    <div class="tag">MES QUE UN CLUB</div>
+    <h1>BARÇA EMPIRE</h1>
+    <h2>הבית של אוהדי ברצלונה 🔥</h2>
+    <p>
+      כל השחקנים, המשחקים, התוצאות ורגעי השערים של
+      המועדון הגדול בעולם. ברוכים הבאים לאימפריה!
+    </p>
+    <a class="btn" href="#players">לכל השחקנים</a>
+    <a class="btn" href="#matches">לתקצירי המשחקים</a>
+  </div>
 </div>
-</div>
+
+<section id="stats">
+  <h2 class="section-title">BARÇA במספרים 📊</h2>
+  <p class="sub">העונה: 2026/27. המספרים כאן הם פרטי סגל ותוצאות שפורסמו, לא נתוני שערים אישיים.</p>
+  <div class="stats-grid">
+    <div class="stat"><strong>27</strong><span>שחקנים בסגל המוצג</span></div>
+    <div class="stat"><strong>2026/27</strong><span>העונה הנוכחית</span></div>
+    <div class="stat"><strong>🔵🔴</strong><span>Visca Barça</span></div>
+  </div>
+  <p style="margin-top:20px">
+    <a class="btn" target="_blank" href="https://www.fcbarcelona.com/en/football/first-team/players">הסגל הרשמי</a>
+    <a class="btn" target="_blank" href="https://www.fcbarcelona.com/en/futbol/primer-equip/resultats">כל התוצאות</a>
+  </p>
+</section>
 
 <section id="players">
-<h2 class="section-title">⭐ THE STARS</h2>
-<div class="players">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600" alt="כדורגל">
-<h3>ראפיניה 🐐</h3><p>THE BRAZILIAN MAGIC</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600" alt="כדורגל">
-<h3>לאמין ימאל</h3><p>THE FUTURE</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600" alt="כדורגל">
-<h3>פדרי</h3><p>THE MIDFIELD MAGIC</p>
-</div>
-</div>
+  <h2 class="section-title">סגל ברצלונה ⭐</h2>
+  <p class="sub">כל שחקני הסגל. חפש שחקן כדי למצוא את הכרטיס שלו ואת הנתונים שלו.</p>
+  <input class="searchbar" id="search" placeholder="🔎 חפש שחקן..." oninput="filterPlayers()">
+  <div class="players-grid" id="playersGrid"></div>
 </section>
 
-<section id="history">
-<h2 class="section-title">🏆 THE LEGACY</h2>
-<div class="panel" style="text-align:center">
-<h2>FC BARCELONA</h2>
-<p>מועדון הכדורגל של ברצלונה נוסד בשנת 1899.</p>
-<p>הצבעים שלנו, ההיסטוריה שלנו והאוהדים שלנו — זאת בארסה!</p>
-<p style="font-size:28px;color:#d9a5ff">VISCA EL BARÇA 🔵🔴</p>
-</div>
+<section id="matches">
+  <h2 class="section-title">תוצאות ותקצירי משחקים 🏆</h2>
+  <p class="sub">תוצאות משחקי הקבוצה שפורסמו עד 8 בנובמבר 2026. לחיצה פותחת חיפוש לתקציר המשחק.</p>
+  <div class="matches-grid" id="matchesGrid"></div>
 </section>
 
-<section id="news">
-<h2 class="section-title">📰 BARÇA NEWS</h2>
-<div class="news">
-<div><h3>🔵 חדשות הקבוצה</h3><p>כל מה שחדש בעולם ברצלונה.</p></div>
-<div><h3>🔴 הכוכבים</h3><p>מעקב אחרי שחקני בארסה.</p></div>
-<div><h3>💜 הקהילה</h3><p>הבית של אוהדי ברצלונה.</p></div>
-</div>
+<section id="goals">
+  <h2 class="section-title">רגעי הגולים ⚽</h2>
+  <p class="sub">קליפים קצרים של שערים לפי שחקן. הקישורים פותחים חיפוש ממוקד לקליפים, ולא שידורים מלאים.</p>
+  <div class="goals-grid" id="goalsGrid"></div>
 </section>
 
-<section id="store">
-<h2 class="section-title">💜 BARÇA STORE</h2>
-<p style="text-align:center">בחרו חולצה, מידה ושם אישי!</p>
-<div class="products">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600" alt="חולצת בית">
-<h3>חולצת בית 🔵🔴</h3><p class="price">100 ₪ להמחשה</p>
-<select id="s1"><option>S</option><option>M</option><option>L</option><option>XL</option></select>
-<input id="n1" placeholder="שם על החולצה">
-<input id="b1" type="number" placeholder="מספר">
-<button onclick="add('חולצת בית',100,'s1','n1','b1')">הוסף לעגלה 🛒</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600" alt="חולצה סגולה">
-<h3>החולצה הסגולה 💜</h3><p class="price">100 ₪ להמחשה</p>
-<select id="s2"><option>S</option><option>M</option><option>L</option><option>XL</option></select>
-<input id="n2" placeholder="שם על החולצה">
-<input id="b2" type="number" placeholder="מספר">
-<button onclick="add('החולצה הסגולה',100,'s2','n2','b2')">הוסף לעגלה 🛒</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600" alt="חולצת אימון">
-<h3>חולצת אימון</h3><p class="price">80 ₪ להמחשה</p>
-<select id="s3"><option>S</option><option>M</option><option>L</option><option>XL</option></select>
-<input id="n3" placeholder="שם על החולצה">
-<input id="b3" type="number" placeholder="מספר">
-<button onclick="add('חולצת אימון',80,'s3','n3','b3')">הוסף לעגלה 🛒</button>
-</div>
-
-</div>
-</section>
-
-<section id="cart">
-<h2 class="section-title">🛒 MY CART</h2>
-<div class="panel">
-<div id="items">העגלה שלך ריקה כרגע</div>
-<h2 id="total">סה"כ: 0 ₪</h2>
-<button onclick="clearCart()">רוקן עגלה</button>
-<p class="small">המחירים להמחשה בלבד. האתר אינו מבצע תשלום או הזמנה אמיתית.</p>
-<a class="glow" href="https://store.fcbarcelona.com/" target="_blank">החנות הרשמית של בארסה</a>
-</div>
+<section>
+  <div class="banner">
+    <h2>VISCA EL BARÇA! 🔵🔴</h2>
+    <p>יותר ממועדון. זאת משפחה.</p>
+    <a class="btn" target="_blank" href="https://www.fcbarcelona.com/">האתר הרשמי של ברצלונה</a>
+  </div>
 </section>
 
 <footer>
-<h2>BARÇA EMPIRE 💜</h2>
-<p>MADE FOR CULERS. BUILT FOR GLORY.</p>
-<p>VISCA BARÇA 🔵🔴</p>
+  <h2>BARÇA EMPIRE 🔵🔴</h2>
+  <p>נבנה לאוהדי ברצלונה באהבה ⚽</p>
+  <p class="small">אתר אוהדים עצמאי, לא אתר רשמי של FC Barcelona.</p>
 </footer>
 
 <script>
-let cart=[];
-function add(product,price,size,name,number){
- cart.push({
-  product,price,
-  size:document.getElementById(size).value,
-  name:document.getElementById(name).value||"ללא שם",
-  number:document.getElementById(number).value||"ללא מספר"
- });
- render();
- alert("נוסף לעגלה! 💜");
+const players = [
+  [1,"Joan García","שוער"],
+  [13,"Wojciech Szczęsny","שוער"],
+  [25,"Dominik Livaković","שוער"],
+  [2,"João Cancelo","מגן"],
+  [3,"Alejandro Balde","מגן"],
+  [5,"Pau Cubarsí","בלם"],
+  [12,"Xavi Espart","מגן"],
+  [15,"Andreas Christensen","בלם"],
+  [18,"Gerard Martín","מגן"],
+  [23,"Jules Koundé","מגן"],
+  [24,"Eric García","בלם"],
+  [4,"Brian Fariñas","קשר"],
+  [6,"Gavi","קשר"],
+  [7,"Fermín López","קשר"],
+  [8,"Pedri","קשר"],
+  [16,"Rodri","קשר"],
+  [20,"Dani Olmo","קשר"],
+  [21,"Frenkie de Jong","קשר"],
+  [22,"Marc Bernal","קשר"],
+  [9,"Gabriel Jesus","חלוץ"],
+  [10,"Lamine Yamal","חלוץ"],
+  [11,"Raphinha","חלוץ"],
+  [14,"Karim Adeyemi","חלוץ"],
+  [17,"Anthony Gordon","חלוץ"],
+  [19,"Roony Bardghji","חלוץ"],
+  [27,"Jesse Bisiwu","חלוץ"],
+  [29,"Hamza Abdelkarim","חלוץ"]
+];
+
+function playerSearch(name, extra="stats") {
+  const q = extra === "goals"
+    ? name + " Barcelona goals short clips"
+    : name + " Barcelona 2026 2027 player stats goals assists appearances";
+  return "https://www.youtube.com/results?search_query=" +
+    encodeURIComponent(q);
 }
-function render(){
- let area=document.getElementById("items");
- if(cart.length===0){area.innerHTML="העגלה שלך ריקה כרגע";}
- else{
-  area.innerHTML=cart.map((x,i)=>`
-   <div class="cart-item">
-   <b>${x.product}</b><br>
-   מידה: ${x.size} | שם: ${x.name} | מספר: ${x.number}<br>
-   ${x.price} ₪
-   <button onclick="removeItem(${i})">הסר</button>
-   </div>`).join("");
- }
- document.getElementById("total").innerText=
- "סה״כ: "+cart.reduce((sum,x)=>sum+x.price,0)+" ₪";
+function renderPlayers(list) {
+  const grid=document.getElementById("playersGrid");
+  grid.innerHTML="";
+  list.forEach(p=>{
+    const card=document.createElement("article");
+    card.className="player";
+    card.innerHTML=`
+      <div class="player-top">
+        <span class="shirt">${p[0]}</span>
+        <span class="position">${p[2]}</span>
+      </div>
+      <h3>${p[1]}</h3>
+      <p>FC Barcelona · עונת 2026/27</p>
+      <a target="_blank" href="https://www.fcbarcelona.com/en/football/first-team/players">פרופיל רשמי</a>
+      <a target="_blank" href="${playerSearch(p[1])}">נתונים אישיים</a>
+      <a target="_blank" href="${playerSearch(p[1],"goals")}">רגעי גולים</a>
+    `;
+    grid.appendChild(card);
+  });
 }
-function removeItem(i){cart.splice(i,1);render()}
-<section id="players">
-<h2 class="section-title">⭐ THE FULL BARÇA SQUAD</h2>
-<p style="text-align:center;color:#ddd">
-סגל ברצלונה 2026/27 — נתוני עונה
-</p>
+function filterPlayers(){
+  const q=document.getElementById("search").value.toLowerCase();
+  renderPlayers(players.filter(p=>p[1].toLowerCase().includes(q)));
+}
+renderPlayers(players);
 
-<div class="players">
+const matches=[
+  ["8 בנובמבר 2026","Atlético Madrid","1–2","ניצחון","LaLiga"],
+  ["3 בנובמבר 2026","Aston Villa","3–0","ניצחון","Champions League"],
+  ["31 באוקטובר 2026","Alavés","6–1","ניצחון","LaLiga"],
+  ["25 באוקטובר 2026","Real Madrid","1–2","הפסד","LaLiga"],
+  ["20 באוקטובר 2026","Paris Saint-Germain","2–4","הפסד","Champions League"],
+  ["17 באוקטובר 2026","Real Betis","5–2","ניצחון","LaLiga"],
+  ["13 באוקטובר 2026","Galatasaray","4–1","ניצחון","Champions League"],
+  ["10 באוקטובר 2026","Getafe","3–0","ניצחון","LaLiga"],
+  ["19 בספטמבר 2026","Sevilla","3–1","ניצחון","LaLiga"],
+  ["16 בספטמבר 2026","Racing Santander","7–2","ניצחון","LaLiga"],
+  ["13 בספטמבר 2026","Levante","4–2","ניצחון","LaLiga"],
+  ["9 בספטמבר 2026","Feyenoord","5–1","ניצחון","Champions League"]
+];
 
-<div class="card"><h3>1. Joan García</h3><p>🇪🇸 ספרד | שוער</p><p>הופעות: 15 | שערים: 0 | בישולים: 0</p></div>
-<div class="card"><h3>2. João Cancelo</h3><p>🇵🇹 פורטוגל | מגן</p><p>הופעות: 13 | שערים: 2 | בישולים: 3</p></div>
-<div class="card"><h3>3. Alejandro Balde</h3><p>🇪🇸 ספרד | מגן</p><p>הופעות: 5 | שערים: 0 | בישולים: 0</p></div>
-<div class="card"><h3>4. Brian Fariñas</h3><p>🇪🇸 ספרד | שחקן הגנה</p><p>הופעות: 3 | שערים: 0 | בישולים: 0</p></div>
-<div class="card"><h3>5. Pau Cubarsí</h3><p>🇪🇸 ספרד | בלם</p><p>הופעות: 13 | שערים: 0 | בישולים: 2</p></div>
-<div class="card"><h3>6. Gavi</h3><p>🇪🇸 ספרד | קשר</p><p>הופעות: 9 | שערים: 0 | בישולים: 0</p></div>
-<div class="card"><h3>7. Fermín López</h3><p>🇪🇸 ספרד | קשר התקפי</p><p>הופעות: 15 | שערים: 8 | בישולים: 7</p></div>
-<div class="card"><h3>8. Pedri</h3><p>🇪🇸 ספרד | קשר</p><p>הופעות: 16 | שערים: 1 | בישולים: 3</p></div>
-<div class="card"><h3>9. Gabriel Jesus</h3><p>🇧🇷 ברזיל | חלוץ</p><p>הופעות: 10 | שערים: 4 | בישולים: 1</p></div>
-<div class="card"><h3>10. Lamine Yamal</h3><p>🇪🇸 ספרד | קיצוני</p><p>הופעות: 16 | שערים: 13 | בישולים: 12</p></div>
-<div class="card"><h3>11. Raphinha 🐐</h3><p>🇧🇷 ברזיל | קיצוני</p><p>הופעות: 16 | שערים: 23 | בישולים: 4</p></div>
-<div class="card"><h3>12. Xavi Espart</h3><p>🇪🇸 ספרד | מגן</p><p>הופעות: 9 | שערים: 2 | בישולים: 2</p></div>
-<div class="card"><h3>13. Wojciech Szczęsny</h3><p>🇵🇱 פולין | שוער</p><p>הופעות: 1 | שערים: 0 | בישולים: 0</p></div>
-<div class="card"><h3>14. Karim Adeyemi</h3><p>🇩🇪 גרמניה | חלוץ</p><p>הופעות: 15 | שערים: 4 | בישולים: 2</p></div>
-<div class="card"><h3>15. Andreas Christensen</h3><p>🇩🇰 דנמרק | בלם</p><p>הופעות: 8 | שערים: 0 | בישולים: 1</p></div>
-<div class="card"><h3>16. Rodrigo</h3><p>🇪🇸 ספרד | קשר</p><p>הופעות: 14 | שערים: 1 | בישולים: 1</p></div>
-<div class="card"><h3>17. Anthony Gordon</h3><p>🏴 אנגליה | קיצוני</p><p>הופעות: 15 | שערים: 3 | בישולים: 4</p></div>
-<div class="card"><h3>18. Gerard Martín</h3><p>🇪🇸 ספרד | מגן</p><p>הופעות: 14 | שערים: 0 | בישולים: 0</p></div>
-<div class="card"><h3>19. Roony Bardghji</h3><p>🇸🇪 שוודיה | קיצוני</p><p>נתוני עונה: לא זמינים במקור</p></div>
-<div class="card"><h3>20. Dani Olmo</h3><p>🇪🇸 ספרד | קשר התקפי</p><p>הופעות: 12 | שערים: 1 | בישולים: 4</p></div>
-<div class="card"><h3>21. Frenkie de Jong</h3><p>🇳🇱 הולנד | קשר</p><p>הופעות: 4 | שערים: 0 | בישולים: 0</p></div>
-<div class="card"><h3>22. Marc Bernal</h3><p>🇪🇸 ספרד | קשר</p><p>הופעות: 14 | שערים: 0 | בישולים: 2</p></div>
-<div class="card"><h3>23. Jules Koundé</h3><p>🇫🇷 צרפת | מגן</p><p>הופעות: 8 | שערים: 1 | בישולים: 1</p></div>
-<div class="card"><h3>24. Eric García</h3><p>🇪🇸 ספרד | בלם</p><p>הופעות: 10 | שערים: 1 | בישולים: 0</p></div>
-<div class="card"><h3>25. Dominik Livaković</h3><p>🇭🇷 קרואטיה | שוער</p><p>הופעות: 1 | שערים: 0 | בישולים: 0</p></div>
-<div class="card"><h3>27. Jesse Bisiwu</h3><p>🇧🇪 בלגיה | שחקן התקפה</p><p>נתוני עונה: לא זמינים במקור</p></div>
-<div class="card"><h3>29. Hamza Abdelkarim</h3><p>🇪🇬 מצרים | חלוץ</p><p>הופעות: 2 | שערים: 0 | בישולים: 0</p></div>
+const matchesGrid=document.getElementById("matchesGrid");
+matches.forEach(m=>{
+  const card=document.createElement("article");
+  card.className="match";
+  const resultClass=m[3]==="ניצחון"?"win":"loss";
+  const query="Barcelona vs "+m[1]+" "+m[0]+" highlights goals";
+  card.innerHTML=`
+    <span class="small">${m[0]} · ${m[4]}</span>
+    <h3>FC Barcelona vs ${m[1]}</h3>
+    <div class="score">${m[2]}</div>
+    <div class="${resultClass}">${m[3]}</div>
+    <p>תקציר המשחק ורגעי השערים.</p>
+    <a target="_blank" href="https://www.youtube.com/results?search_query=${encodeURIComponent(query)}">לצפייה בתקציר</a>
+  `;
+  matchesGrid.appendChild(card);
+});
 
-</div>
-</section>
-
-function clearCart(){cart=[];render()}
+const goalsGrid=document.getElementById("goalsGrid");
+players.forEach(p=>{
+  const card=document.createElement("article");
+  card.className="goal";
+  card.innerHTML=`
+    <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=700&q=80" alt="אצטדיון כדורגל">
+    <div class="goal-content">
+      <h3>${p[1]}</h3>
+      <p>רגעי שערים וקליפים קצרים של ${p[1]}.</p>
+      <a target="_blank" href="${playerSearch(p[1],"goals")}">לרגעי הגולים ⚽</a>
+    </div>
+  `;
+  goalsGrid.appendChild(card);
+});
 </script>
 </body>
 </html>
