@@ -4,196 +4,283 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BARÇA EMPIRE 2026/27</title>
+<title>BARÇA EMPIRE</title>
+
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#07142d;color:white;font-family:Arial,sans-serif}
-header{background:linear-gradient(120deg,#061b49,#a50044);text-align:center;padding:35px 15px}
-header h1{font-size:clamp(38px,7vw,68px);color:#ffdf35;margin:5px}
-header p{font-size:19px}
-nav{background:#06102a;padding:17px;display:flex;justify-content:center;gap:22px;flex-wrap:wrap;position:sticky;top:0;z-index:10}
-nav a{color:white;text-decoration:none;font-weight:bold}
-nav a:hover{color:#ffdf35}
-.hero{min-height:390px;background:linear-gradient(#06152c88,#06152cdd),url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1400') center/cover;display:grid;place-items:center;text-align:center;padding:25px}
-.hero h2{font-size:clamp(35px,7vw,65px);color:#ffdf35;margin:10px}
-.hero p{font-size:22px}
-section{max-width:1200px;margin:auto;padding:50px 6%}
-h2.title{text-align:center;color:#ffdf35;font-size:34px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
-.card{background:#10264b;border-radius:16px;overflow:hidden;text-align:center;padding:18px;box-shadow:0 5px 18px #0005}
-.card h3{color:#ffdf35}
-.card p{line-height:1.6}
-.card img{width:100%;height:190px;object-fit:cover;border-radius:10px}
-.jersey{height:220px;border-radius:12px;margin:0 auto 15px;width:165px;position:relative;clip-path:polygon(22% 0,38% 8%,62% 8%,78% 0,100% 20%,83% 42%,75% 32%,75% 100%,25% 100%,25% 32%,17% 42%,0 20%);display:flex;align-items:center;justify-content:center;font-size:35px;font-weight:bold;color:white}
-.home{background:repeating-linear-gradient(90deg,#092b72 0 32px,#a50044 32px 64px)}
-.away{background:linear-gradient(135deg,#57218d,#9b65c9,#25104d)}
-.third{background:linear-gradient(135deg,#a4d6a4,#26834e,#d7edb5)}
-button,.link{background:#ffdf35;color:#07142d;border:0;border-radius:9px;padding:12px 18px;font-size:16px;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block;margin:6px}
-button:hover,.link:hover{background:white}
-select,input{width:100%;padding:11px;margin:6px 0;border:0;border-radius:7px;font-size:15px}
-.price{font-size:19px;color:#ffdf35;font-weight:bold}
-#cart{background:#10264b;padding:25px;border-radius:15px;margin-top:30px}
-#cartItems{line-height:2}
-footer{background:#06102a;text-align:center;padding:30px;color:#bbb}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ color:white;
+ background:
+ radial-gradient(ellipse at 10% 15%,#6b00a8 0,transparent 35%),
+ radial-gradient(ellipse at 90% 30%,#004b9b 0,transparent 35%),
+ radial-gradient(ellipse at 50% 80%,#a00035 0,transparent 40%),
+ #05050b;
+ background-attachment:fixed;
+}
+header{
+ text-align:center;
+ padding:65px 15px;
+ background:linear-gradient(120deg,#080014,#16002d,#001b42,#390018);
+ border-bottom:2px solid #a855f7;
+ box-shadow:0 0 35px #8b00ff66;
+}
+header h1{
+ font-size:clamp(38px,7vw,75px);
+ margin:0;
+ letter-spacing:4px;
+ background:linear-gradient(90deg,#fff,#b76aff,#ff315b,#428cff);
+ background-clip:text;
+ color:transparent;
+}
+header p{color:#ddd;font-size:18px}
+nav{
+ position:sticky;top:0;z-index:10;
+ display:flex;justify-content:center;flex-wrap:wrap;
+ gap:12px;padding:17px;
+ background:#080711ed;
+ border-bottom:1px solid #7738b9;
+ backdrop-filter:blur(12px);
+}
+nav a{
+ color:white;text-decoration:none;font-weight:bold;
+ padding:10px 15px;border-radius:20px;
+ transition:.3s;
+}
+nav a:hover{background:#8b28d9;box-shadow:0 0 18px #a855f7}
+.hero{
+ min-height:440px;
+ display:flex;align-items:center;justify-content:center;
+ text-align:center;padding:25px;
+ background:
+ linear-gradient(90deg,#090015bb,#001c40bb,#350018bb),
+ url("https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1500");
+ background-size:cover;background-position:center;
+}
+.hero h2{font-size:clamp(38px,7vw,65px);text-shadow:0 0 25px #a855f7}
+.hero p{font-size:21px}
+.glow{
+ display:inline-block;padding:14px 25px;
+ border-radius:30px;background:linear-gradient(90deg,#7b16d9,#004dba,#bd003c);
+ color:white;text-decoration:none;font-weight:bold;
+ box-shadow:0 0 22px #8b35ed88;
+}
+section{max-width:1150px;margin:auto;padding:65px 20px}
+.section-title{
+ text-align:center;font-size:35px;margin-bottom:35px;
+ color:#e6b5ff;text-shadow:0 0 18px #9b36ff;
+}
+.players,.products{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+ gap:25px;
+}
+.card{
+ background:linear-gradient(145deg,#171023,#10182d,#210b20);
+ border:1px solid #7436a5;
+ border-radius:20px;overflow:hidden;
+ text-align:center;padding-bottom:22px;
+ box-shadow:0 8px 28px #0009;
+ transition:.3s;
+}
+.card:hover{
+ transform:translateY(-8px);
+ box-shadow:0 0 30px #8b35ed88;
+ border-color:#c77aff;
+}
+.card img{width:100%;height:230px;object-fit:cover}
+.card h3{color:#e8b6ff;font-size:23px}
+.card p{color:#ddd}
+.price{font-size:21px;color:#ffcf63!important;font-weight:bold}
+input,select{
+ display:block;width:85%;margin:9px auto;
+ padding:11px;border-radius:9px;
+ border:1px solid #8c42c9;background:#0b0b18;color:white;
+}
+button{
+ border:0;border-radius:25px;padding:13px 22px;
+ color:white;font-weight:bold;cursor:pointer;
+ background:linear-gradient(90deg,#8b20d7,#0754ba,#c40048);
+ box-shadow:0 0 15px #7130c777;
+ transition:.2s;
+}
+button:hover{transform:scale(1.05);box-shadow:0 0 25px #b64aff}
+.panel{
+ background:linear-gradient(130deg,#160c29,#081a35,#270a21);
+ border:1px solid #7c3bb5;border-radius:20px;
+ padding:25px;box-shadow:0 0 25px #621ca944;
+}
+.news{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px
+}
+.news div{
+ background:#151326;border-right:4px solid #a855f7;
+ padding:22px;border-radius:12px;
+}
+.cart-item{padding:15px 0;border-bottom:1px solid #ffffff33}
+footer{
+ text-align:center;padding:35px;
+ background:linear-gradient(90deg,#090015,#001c3c,#350015);
+ border-top:2px solid #8529bd;color:#ddd;
+}
+.small{color:#aaa;font-size:13px}
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>BARÇA EMPIRE 🔵🔴</h1>
-<p>הבית של אוהדי ברצלונה | עונת 2026/27</p>
+<h1>BARÇA EMPIRE</h1>
+<p>THE HOME OF TRUE CULERS 🔵🔴</p>
+<a class="glow" href="#store">כניסה לחנות 💜</a>
 </header>
 
 <nav>
-<a href="#home">ראשי</a>
+<a href="#home">בית</a>
 <a href="#players">שחקנים</a>
 <a href="#history">היסטוריה</a>
-<a href="#store">חנות החולצות</a>
-<a href="#links">קישורים</a>
+<a href="#news">חדשות</a>
+<a href="#store">חנות</a>
+<a href="#cart">העגלה שלי 🛒</a>
 </nav>
 
 <div class="hero" id="home">
 <div>
-<h2>MÉS QUE UN CLUB</h2>
-<p>יותר ממועדון. זאת משפחה.</p>
-<a class="link" href="#store">לכניסה לחנות 🛍️</a>
+<h2>MES QUE UN CLUB</h2>
+<p>יותר ממועדון. יותר ממשחק. זאת בארסה.</p>
+<a class="glow" href="#players">גלה את בארסה</a>
 </div>
 </div>
 
 <section id="players">
-<h2 class="title">⭐ הכוכבים של בארסה</h2>
-<div class="cards">
+<h2 class="section-title">⭐ THE STARS</h2>
+<div class="players">
 <div class="card">
-<img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600" alt="כדורגל">
-<h3>לאמין ימאל</h3>
-<p>הכישרון הצעיר שמלהיב את העולם.</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600" alt="אצטדיון">
+<img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600" alt="כדורגל">
 <h3>ראפיניה 🐐</h3>
-<p>הכוכב הברזילאי שלנו!</p>
+<p>THE BRAZILIAN MAGIC</p>
 </div>
 <div class="card">
 <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600" alt="כדורגל">
-<h3>פדרי</h3>
-<p>קסם, ראיית משחק וטכניקה.</p>
+<h3>לאמין ימאל</h3>
+<p>THE FUTURE</p>
 </div>
 <div class="card">
-<img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600" alt="מגרש">
-<h3>גאבי</h3>
-<p>לחימה, אנרגיה ונשמה.</p>
+<img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600" alt="כדורגל">
+<h3>פדרי</h3>
+<p>THE MIDFIELD MAGIC</p>
 </div>
 </div>
 </section>
 
 <section id="history">
-<h2 class="title">🔴🔵 ההיסטוריה שלנו</h2>
-<div class="card">
-<h3>FC Barcelona</h3>
-<p>מועדון הכדורגל ברצלונה נוסד בשנת 1899 והפך לאחד המועדונים המוכרים והאהובים בעולם.</p>
-<p><b>Més que un club – יותר ממועדון!</b></p>
+<h2 class="section-title">🏆 THE LEGACY</h2>
+<div class="panel" style="text-align:center">
+<h2>FC BARCELONA</h2>
+<p>מועדון הכדורגל של ברצלונה נוסד בשנת 1899.</p>
+<p>הצבעים שלנו, ההיסטוריה שלנו והאוהדים שלנו — זאת בארסה!</p>
+<p style="font-size:28px;color:#d9a5ff">VISCA EL BARÇA 🔵🔴</p>
+</div>
+</section>
+
+<section id="news">
+<h2 class="section-title">📰 BARÇA NEWS</h2>
+<div class="news">
+<div><h3>🔵 חדשות הקבוצה</h3><p>כל מה שחדש בעולם ברצלונה.</p></div>
+<div><h3>🔴 הכוכבים</h3><p>מעקב אחרי שחקני בארסה.</p></div>
+<div><h3>💜 הקהילה</h3><p>הבית של אוהדי ברצלונה.</p></div>
 </div>
 </section>
 
 <section id="store">
-<h2 class="title">🛍️ BARÇA STORE 2026/27</h2>
-<p style="text-align:center">בחרו את התלבושת שלכם לעונה החדשה!</p>
-
-<div class="cards">
+<h2 class="section-title">💜 BARÇA STORE</h2>
+<p style="text-align:center">בחרו חולצה, מידה ושם אישי!</p>
+<div class="products">
 
 <div class="card">
-<div class="jersey home">BARÇA</div>
-<h3>חולצת בית 2026/27 🔵🔴</h3>
-<p>הצבעים האגדיים של בארסה.</p>
-<p class="price">מחיר באתר Nike</p>
-<select id="size1">
-<option value="">בחר מידה</option>
-<option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option>
-</select>
-<input id="name1" placeholder="שם להדפסה (לא חובה)">
-<input id="number1" type="number" min="1" max="99" placeholder="מספר (לא חובה)">
-<button onclick="add('חולצת בית 2026/27','size1','name1','number1')">הוסף לסל 🛒</button>
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600" alt="חולצת בית">
+<h3>חולצת בית 🔵🔴</h3>
+<p class="price">100 ₪ להמחשה</p>
+<select id="s1"><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+<input id="n1" placeholder="שם על החולצה">
+<input id="b1" type="number" placeholder="מספר">
+<button onclick="add('חולצת בית',100,'s1','n1','b1')">הוסף לעגלה 🛒</button>
 </div>
 
 <div class="card">
-<div class="jersey away">BARÇA</div>
-<h3>חולצת חוץ 2026/27 💜</h3>
-<p>דגם החוץ של העונה, בשיתוף Kobe.</p>
-<p class="price">מחיר באתר Nike</p>
-<select id="size2">
-<option value="">בחר מידה</option>
-<option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option>
-</select>
-<input id="name2" placeholder="שם להדפסה (לא חובה)">
-<input id="number2" type="number" min="1" max="99" placeholder="מספר (לא חובה)">
-<button onclick="add('חולצת חוץ 2026/27','size2','name2','number2')">הוסף לסל 🛒</button>
+<img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600" alt="חולצה סגולה">
+<h3>החולצה הסגולה 💜</h3>
+<p class="price">100 ₪ להמחשה</p>
+<select id="s2"><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+<input id="n2" placeholder="שם על החולצה">
+<input id="b2" type="number" placeholder="מספר">
+<button onclick="add('החולצה הסגולה',100,'s2','n2','b2')">הוסף לעגלה 🛒</button>
 </div>
 
 <div class="card">
-<div class="jersey third">BARÇA</div>
-<h3>חולצה שלישית 2026/27 💚</h3>
-<p>התלבושת השלישית של העונה.</p>
-<p class="price">מחיר באתר Nike</p>
-<select id="size3">
-<option value="">בחר מידה</option>
-<option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option>
-</select>
-<input id="name3" placeholder="שם להדפסה (לא חובה)">
-<input id="number3" type="number" min="1" max="99" placeholder="מספר (לא חובה)">
-<button onclick="add('חולצה שלישית 2026/27','size3','name3','number3')">הוסף לסל 🛒</button>
+<img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600" alt="חולצת אימון">
+<h3>חולצת אימון</h3>
+<p class="price">80 ₪ להמחשה</p>
+<select id="s3"><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+<input id="n3" placeholder="שם על החולצה">
+<input id="b3" type="number" placeholder="מספר">
+<button onclick="add('חולצת אימון',80,'s3','n3','b3')">הוסף לעגלה 🛒</button>
 </div>
 
-</div>
-
-<div id="cart">
-<h2>🛒 סל הקניות שלי</h2>
-<div id="cartItems">הסל עדיין ריק.</div>
-<button onclick="clearCart()">רוקן סל</button>
-<br>
-<a class="link" href="https://www.nike.com/il/w/fc-barcelona-5y174/" target="_blank" rel="noopener">לצפייה בחולצות באתר Nike</a>
-<p>הסל באתר הוא להדגמה בלבד. הוא אינו מבצע רכישה או תשלום.</p>
 </div>
 </section>
 
-<section id="links">
-<h2 class="title">🔗 קישורים חשובים</h2>
-<div class="cards">
-<div class="card">
-<h3>האתר הרשמי</h3>
-<a class="link" href="https://www.fcbarcelona.com/" target="_blank" rel="noopener">FC Barcelona</a>
-</div>
-<div class="card">
-<h3>חנות החולצות</h3>
-<a class="link" href="https://www.nike.com/il/w/fc-barcelona-5y174/" target="_blank" rel="noopener">Nike Barça</a>
-</div>
+<section id="cart">
+<h2 class="section-title">🛒 MY CART</h2>
+<div class="panel">
+<div id="items">העגלה שלך ריקה כרגע</div>
+<h2 id="total">סה"כ: 0 ₪</h2>
+<button onclick="clearCart()">רוקן עגלה</button>
+<p class="small">המחירים להמחשה בלבד. האתר אינו מבצע תשלום או הזמנה אמיתית.</p>
+<a class="glow" href="https://store.fcbarcelona.com/" target="_blank" rel="noopener">החנות הרשמית של בארסה</a>
 </div>
 </section>
 
 <footer>
-<h3>BARÇA EMPIRE 🔵🔴</h3>
-<p>Visca Barça! ❤️</p>
-<p>עונת 2026/27</p>
+<h2>BARÇA EMPIRE 💜</h2>
+<p>MADE FOR CULERS. BUILT FOR GLORY.</p>
+<p>VISCA BARÇA 🔵🔴</p>
 </footer>
 
 <script>
 let cart=[];
-function add(product,sizeId,nameId,numberId){
-let size=document.getElementById(sizeId).value;
-let name=document.getElementById(nameId).value.trim();
-let number=document.getElementById(numberId).value;
-if(!size){alert('צריך לבחור מידה!');return;}
-if(number && (Number(number)<1 || Number(number)>99)){alert('המספר צריך להיות בין 1 ל-99');return;}
-cart.push({product,size,name,number});
-render();
+
+function add(product,price,size,name,number){
+ cart.push({
+  product,price,
+  size:document.getElementById(size).value,
+  name:document.getElementById(name).value||"ללא שם",
+  number:document.getElementById(number).value||"ללא מספר"
+ });
+ render();
+ alert("נוסף לעגלה! 💜");
 }
 function render(){
-let area=document.getElementById('cartItems');
-if(cart.length===0){area.textContent='הסל עדיין ריק.';return;}
-area.innerHTML=cart.map((item,i)=>
-`${i+1}. ${item.product} | מידה ${item.size} | ${item.name||'ללא שם'} ${item.number?'#'+item.number:''}`
-).join('<br>');
+ let area=document.getElementById("items");
+ if(cart.length===0){
+  area.innerHTML="העגלה שלך ריקה כרגע";
+ }else{
+  area.innerHTML=cart.map((x,i)=>`
+   <div class="cart-item">
+   <b>${x.product}</b><br>
+   מידה: ${x.size} | שם: ${x.name} | מספר: ${x.number}<br>
+   ${x.price} ₪
+   <button onclick="removeItem(${i})">הסר</button>
+   </div>`).join("");
+ }
+ document.getElementById("total").innerText=
+ "סה״כ: "+cart.reduce((sum,x)=>sum+x.price,0)+" ₪";
 }
-function clearCart(){cart=[];render();}
+function removeItem(i){cart.splice(i,1);render()}
+function clearCart(){cart=[];render()}
 </script>
+
 </body>
 </html>
