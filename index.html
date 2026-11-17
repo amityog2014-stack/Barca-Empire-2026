@@ -4,88 +4,229 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BARÇA EMPIRE - אתר אוהדי ברצלונה</title>
-<meta name="description" content="כל מה שצריך לדעת על ברצלונה: שחקנים, משחקים, תארים והיסטוריה!">
+<title>BARÇA EMPIRE | הבית של אוהדי ברצלונה</title>
+<meta name="description" content="BARÇA EMPIRE - אתר אוהדי ברצלונה עם שחקנים, היסטוריה, תארים וחדשות.">
 <style>
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
 body {
-  margin: 0;
-  font-family: Arial;
-  background: #07152e;
-  color: white;
-  text-align: center;
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#07152e;
+  color:white;
 }
 header {
-  background: linear-gradient(90deg,#004d98,#a50044);
-  padding: 35px;
+  padding:75px 20px;
+  text-align:center;
+  background:linear-gradient(120deg,#004d98,#a50044,#07152e);
 }
-h1 { font-size: 42px; }
+header h1 {
+  font-size:clamp(38px,7vw,70px);
+  margin:0;
+  text-shadow:3px 3px 10px black;
+}
+header p { font-size:21px; }
 nav {
-  background: #a50044;
-  padding: 15px;
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#a50044;
+  padding:17px 8px;
+  text-align:center;
 }
 nav a {
-  color: white;
-  margin: 15px;
-  text-decoration: none;
-  font-weight: bold;
+  color:white;
+  text-decoration:none;
+  margin:0 12px;
+  font-weight:bold;
 }
-section { padding: 30px; }
-.player {
-  background: #142b50;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 650px;
-  border-radius: 15px;
+nav a:hover { color:#ffd700; }
+section {
+  padding:55px 20px;
+  text-align:center;
 }
-img {
-  width: 90%;
-  max-width: 500px;
-  border-radius: 15px;
+h2 { font-size:32px; color:#ffcf40; }
+.hero {
+  background:linear-gradient(135deg,#102d59,#450c39);
+  padding:45px 20px;
+  border-radius:20px;
+  max-width:1000px;
+  margin:auto;
+}
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:22px;
+  max-width:1100px;
+  margin:30px auto;
+}
+.card {
+  background:#142b50;
+  border:2px solid #a50044;
+  border-radius:18px;
+  padding:25px 18px;
+  transition:transform .2s;
+}
+.card:hover { transform:translateY(-7px); }
+.number {
+  font-size:42px;
+  color:#ffcf40;
+  font-weight:bold;
+}
+.card h3 { font-size:24px; }
+.card p { line-height:1.7; }
+button {
+  background:#a50044;
+  color:white;
+  border:0;
+  padding:13px 23px;
+  border-radius:10px;
+  font-size:16px;
+  cursor:pointer;
+}
+button:hover { background:#004d98; }
+a { color:#ffcf40; }
+.stats {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:25px;
+}
+.stat {
+  background:#142b50;
+  border-radius:15px;
+  padding:25px;
+  min-width:180px;
+}
+.stat strong {
+  display:block;
+  font-size:38px;
+  color:#ffcf40;
 }
 footer {
-  background: #a50044;
-  padding: 20px;
+  background:#a50044;
+  padding:30px;
+  text-align:center;
 }
 </style>
 </head>
 <body>
+
 <header>
 <h1>🔵🔴 BARÇA EMPIRE 🔴🔵</h1>
-<h2>הבית של אוהדי ברצלונה!</h2>
+<p>יותר ממועדון – MÉS QUE UN CLUB</p>
+<p>הבית של אוהדי ברצלונה!</p>
 </header>
+
 <nav>
-<a href="#team">הקבוצה</a>
-<a href="#players">השחקנים</a>
-<a href="#raphinha">ראפיניה</a>
+<a href="#home">ראשי</a>
+<a href="#players">שחקנים</a>
+<a href="#history">היסטוריה</a>
+<a href="#trophies">תארים</a>
+<a href="#links">קישורים</a>
 </nav>
-<section id="team">
-<h2>🔵🔴 FC Barcelona</h2>
-<p>ברוכים הבאים לאתר האוהדים של אחת הקבוצות הגדולות בעולם!</p>
-<img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Barcelona">
+
+<section id="home">
+<div class="hero">
+<h2>ברוכים הבאים לאימפריה! 🏆</h2>
+<p>כאן תמצאו את כל מה שצריך לדעת על FC Barcelona.</p>
+<p>שחקנים, אגדות, רגעים גדולים והאהבה לכדורגל.</p>
+</div>
 </section>
+
 <section id="players">
 <h2>⭐ הכוכבים של בארסה</h2>
-<div class="player">
-<h2>Lamine Yamal</h2>
-<p>אחד הכישרונות הצעירים הבולטים בכדורגל העולמי.</p>
+<div class="cards">
+
+<div class="card">
+<div class="number">10</div>
+<h3>לאמין ימאל</h3>
+<p>הכישרון הצעיר שמלהיב את אוהדי ברצלונה עם דריבלים ויצירתיות.</p>
 </div>
-<div class="player">
-<h2>Pedri</h2>
-<p>קשר יצירתי עם ראיית משחק מדהימה.</p>
+
+<div class="card">
+<div class="number">8</div>
+<h3>פדרי</h3>
+<p>קשר יצירתי עם שליטה בכדור וראיית משחק נהדרת.</p>
 </div>
-<div class="player">
-<h2>Raphinha 🐐</h2>
-<p>הכוכב הברזילאי שלנו!</p>
+
+<div class="card">
+<div class="number">11</div>
+<h3>ראפיניה 🐐</h3>
+<p>הכוכב הברזילאי! מהירות, בעיטות, בישולים ואנרגיה.</p>
+</div>
+
+<div class="card">
+<div class="number">6</div>
+<h3>גאבי</h3>
+<p>קשר לוחם עם תשוקה גדולה למשחק ולמועדון.</p>
+</div>
+
+<div class="card">
+<div class="number">7</div>
+<h3>פרמין לופס</h3>
+<p>קשר התקפי עם אנרגיה, תנועה ובעיטות מסוכנות.</p>
+</div>
+
+<div class="card">
+<div class="number">5</div>
+<h3>פאו קובארסי</h3>
+<p>בלם צעיר עם יכולת מסירה ומשחק הגנה מרשימים.</p>
+</div>
+
+</div>
+<p><a href="https://www.fcbarcelona.com/en/football/first-team/players">לכל שחקני ברצלונה באתר הרשמי ←</a></p>
+</section>
+
+<section id="history">
+<h2>📖 ההיסטוריה של ברצלונה</h2>
+<div class="hero">
+<p>מועדון הכדורגל ברצלונה נוסד בשנת 1899 בעיר ברצלונה שבספרד.</p>
+<p>המועדון הפך לאחד ממועדוני הכדורגל המפורסמים והמצליחים בעולם.</p>
+<p>הכינוי המפורסם של הקבוצה הוא Barça.</p>
+<p>האצטדיון הביתי של הקבוצה הוא Spotify Camp Nou.</p>
 </div>
 </section>
-<section id="raphinha">
-<h2>🐐 RAPHINHA</h2>
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Raphinha%20FCB%20.jpg" alt="Raphinha">
-<p>מהירות, כישרון, מסירות ושערים. VISCA BARÇA!</p>
+
+<section id="trophies">
+<h2>🏆 התארים של בארסה</h2>
+<div class="stats">
+<div class="stat">
+<strong>5</strong>
+ליגת האלופות
+</div>
+<div class="stat">
+<strong>29</strong>
+אליפויות ספרד
+</div>
+<div class="stat">
+<strong>32</strong>
+גביעי המלך
+</div>
+</div>
 </section>
+
+<section id="links">
+<h2>🌍 הקישורים שלנו</h2>
+<div class="cards">
+<div class="card">
+<h3>האתר הרשמי</h3>
+<p>כל החדשות והעדכונים של ברצלונה.</p>
+<a href="https://www.fcbarcelona.com/" target="_blank">כניסה לאתר ←</a>
+</div>
+<div class="card">
+<h3>הסגל הרשמי</h3>
+<p>כל השחקנים של הקבוצה.</p>
+<a href="https://www.fcbarcelona.com/en/football/first-team/players" target="_blank">לצפייה בסגל ←</a>
+</div>
+</div>
+</section>
+
 <footer>
-<p>BARÇA EMPIRE © 2026</p>
-<p>VISCA EL BARÇA! 🔵🔴</p>
+<h2>🔵🔴 BARÇA EMPIRE 🔴🔵</h2>
+<p>VISCA EL BARÇA!</p>
+<p>אתר אוהדים | 2026</p>
 </footer>
+
 </body>
 </html>
